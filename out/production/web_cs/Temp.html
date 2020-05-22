@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+        body{
+            text-align: center;
+            background-color: white;
+        }
+        h1,h2,h3,h4,h5,h6{
+            padding: 10px 50px;
+            border: 1px solid green;
+            text-align: center;
+            margin-top: 20px;
+            display: inline-block;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            color: grey;
+        }
+        .bgc_cor{
+            background-color: green;
+            color: white;
+        }
+    </style>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $("body>h1,h2,h3,h4,h5,h6").mouseover(function () {
+                $("body>h1,h2,h3,h4,h5,h6").removeAttr("class");
+                $(this).addClass("bgc_cor");
+            });
+        });
+    </script>
+</head>
+<body>
+<h1 class="bgc_cor">Hello,GitHub</h1><br/>
+<h2>Hello,GitHub</h2><br/>
+<h3>Hello,GitHub</h3><br/>
+<h4>Hello,GitHub</h4><br/>
+<h5>Hello,GitHub</h5><br/>
+<h6>Hello,GitHub</h6><br/>
+</body>
+</html>
